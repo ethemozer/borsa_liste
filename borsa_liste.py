@@ -2,6 +2,12 @@ import requests
 from bs4 import BeautifulSoup
 import os
 
+'''
+pip install bs4
+pip install requests
+pip install lxml
+'''
+
 Url = "https://www.kap.org.tr/tr/Pazarlar"
 R = requests.get(Url)
 Soup = BeautifulSoup(R.text,"lxml")
